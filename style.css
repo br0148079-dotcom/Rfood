@@ -663,6 +663,64 @@ header{
     
 }
 
+/* ===========================
+   Mobile Responsive
+=========================== */
+
+@media (max-width:768px){
+
+    .navbar{
+        padding:15px 20px;
+        flex-direction:column;
+        height:auto;
+    }
+
+    .logo{
+        width:180px;
+        height:55px;
+        background-size:contain;
+        background-repeat:no-repeat;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+        margin-top:15px;
+    }
+
+    .nav-links a{
+        font-size:14px;
+        margin-left:0;
+    }
+
+    .H1{
+        width:90%;
+        margin:140px auto 0;
+        text-align:center;
+        font-size:22px;
+        height:auto;
+    }
+
+    .H1 h1{
+        font-size:55px;
+        line-height:1.1;
+    }
+
+    #p1{
+        width:100%;
+        font-size:16px;
+        height:auto;
+        margin-top:20px;
+    }
+
+    .btn{
+        display:block;
+        margin:30px auto;
+    }
+
+}
+
 
 
 
