@@ -12,11 +12,18 @@ body{
    background-repeat:no-repeat;
    background-attachment: fixed;
    overflow-x: hidden;
-           border: 2px solid white;
-
    
 }
+#home{
+    scroll-margin-top: 100px;
+}
+ html{
+    scroll-behavior: smooth;
+}
 
+#book-table{
+    scroll-margin-top: 80px;
+}
 
 
 .navbar{
@@ -540,6 +547,7 @@ body{
     gap:20px;
     margin-bottom:20px;
     margin-top: 40px;
+    margin-left: 40px;
 }
 
 .input-box{
@@ -658,10 +666,7 @@ body{
     transform:scale(1.2);
 }
 
-header{
-    border: 2px solid white;
-    
-}
+
 
 /* ===========================
    Mobile Responsive
@@ -719,6 +724,32 @@ header{
         margin:30px auto;
     }
 
+}
+
+.slider{
+    width:100%;
+    overflow:hidden;
+}
+
+.slide-track{
+    display:flex;
+    width:max-content;
+    animation: marquee 20s linear infinite;
+}
+
+.card{
+    flex:0 0 auto;
+    width:260px;
+    margin-right:20px;
+}
+
+@keyframes marquee{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(calc(-50%));
+    }
 }
 
 
