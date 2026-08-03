@@ -7,7 +7,7 @@
 body{
    background:black;
    font-family:Arial;
-   background-image: url(b.png);
+   background-image: url(bg.png);
    background-size:cover;
    background-repeat:no-repeat;
    background-attachment: fixed;
