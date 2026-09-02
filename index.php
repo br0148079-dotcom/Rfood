@@ -8,6 +8,55 @@
 <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></head>
 <body>
+
+<?php
+
+if (isset($_GET['booking']) && $_GET['booking'] == 'success') {
+?>
+
+<div class="success-message">
+
+    <div class="success-check">
+        ✓
+    </div>
+
+    <h2>Booking Successful!</h2>
+
+    <p>
+        Thank you for choosing Restfood Restaurant.
+        Your table has been successfully booked.
+    </p>
+
+    <a href="index.php" class="success-btn">
+        BACK TO HOME
+    </a>
+
+</div>
+
+<?php
+}
+
+if (isset($_GET['booking']) && $_GET['booking'] == 'failed') {
+?>
+
+<div class="failed-message">
+
+    <h2>Booking Failed!</h2>
+
+    <p>
+        Something went wrong. Please try again.
+    </p>
+
+    <a href="index.php" class="success-btn">
+        TRY AGAIN
+    </a>
+
+</div>
+
+<?php
+}
+?>
+
     <header>
         <nav class="navbar">
 
@@ -302,8 +351,7 @@
         <div class="hb5">BOOK A TABLE</div>
     <div class="container" >
 
-        <form action="actions/book_table.php" method="POST">
-
+<form action="actions/book_table.php" method="POST">
     <div class="form-box">
 
         <div class="row">
@@ -340,10 +388,6 @@
                 <label>TIME</label>
                 <input type="time" name="booking_time" required>
             </div>
-            <div class="input-box">
-    <label>NUMBER OF GUESTS</label>
-    <input type="number" name="guests" placeholder="Number of Guests" min="1" max="20" required>
-</div>
         </div>
 
         <button type="submit" class="btn">
